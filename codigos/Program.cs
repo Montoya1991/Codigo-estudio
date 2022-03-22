@@ -6,42 +6,39 @@ namespace codigos
     {
         static void Main(string[] args)
         {
-            //primer manera de crear un arrays o matriz
-            int[] Matriz1;
-            Matriz1 = new int[4];
+            // array implicito 
+            // cuando se crea un arreglo de esta manera el sistema toma como tipo string
+            var datos = new[] { "juan", "Diaz", "España" };
 
-            // almacenar datos en la arrays
-            Matriz1[0] = 15;
-            Matriz1[1] = 25;
-            Matriz1[2] = 8;
-            Matriz1[3] = 7;
+            // cuando se crea un arreglo de esta manera el sistema toma como tipo double que acepta decimales
+            var valores = new[] { 15, 28, 35, 75.5, 30.30 };
 
-            // Segunda manera de crear una Matriz
-            int[] Matriz2 = new int [3];
+            // arrays de objetos 
+            Empleados[] arrayEmpleados = new Empleados[2];
+            arrayEmpleados[0] = new Empleados("Sara", 37);
 
-            // tercera manera de crear una Matriz
-            int[] Matriz3 = {15,25,8,7 };
+            Empleados Ana = new Empleados("Ana", 27);
+            arrayEmpleados[1] = Ana;
 
-            //------------------------------------------------------
-            // Ejemplo
+            // arrays de tipos o clases anonimas 
 
-            int[] edades;
-
-            edades = new int[4];
-
-            edades[0] = 15;
-            edades[1] = 27;
-            edades[2] = 19;
-            edades[3] = 80;
-
-            Console.WriteLine("se mostrara lo almacenado en el campo 2 :"+ edades[2]);
-
-            //______________________________________
-            //forma abreviada del ejemplo anterior
-
-            int[] edades2 = { 15, 27, 19, 80 };
-
-            Console.WriteLine(edades2[2]);
+            var personas = new[]
+            {
+                new {Nombre= "Juan", Edad=19},
+                new {Nombre="Maria", Edad = 49},
+                new {Nombre="Diana" , Edad = 35}
+            };
+            Console.WriteLine(personas[1]);
         }
+    }
+    class Empleados
+    {
+        public Empleados (string nombre, int edad)
+        {
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+        string nombre;
+        int edad;   
     }
 }
