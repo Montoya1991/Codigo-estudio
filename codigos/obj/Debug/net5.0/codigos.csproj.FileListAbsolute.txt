@@ -1,0 +1,16 @@
+D:\Repositorios estudio\Codigo estudio\codigos\bin\Debug\net5.0\codigos.exe
+D:\Repositorios estudio\Codigo estudio\codigos\bin\Debug\net5.0\codigos.deps.json
+D:\Repositorios estudio\Codigo estudio\codigos\bin\Debug\net5.0\codigos.runtimeconfig.json
+D:\Repositorios estudio\Codigo estudio\codigos\bin\Debug\net5.0\codigos.runtimeconfig.dev.json
+D:\Repositorios estudio\Codigo estudio\codigos\bin\Debug\net5.0\codigos.dll
+D:\Repositorios estudio\Codigo estudio\codigos\bin\Debug\net5.0\codigos.pdb
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.csproj.AssemblyReference.cache
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.AssemblyInfoInputs.cache
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.AssemblyInfo.cs
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.csproj.CoreCompileInputs.cache
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.dll
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\refint\codigos.dll
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.pdb
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\codigos.genruntimeconfig.cache
+D:\Repositorios estudio\Codigo estudio\codigos\obj\Debug\net5.0\ref\codigos.dll
