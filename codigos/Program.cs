@@ -6,27 +6,30 @@ namespace codigos
     {
         static void Main(string[] args)
         {
-            int[] numeros = new int[4];
-
-            numeros[0] = 7;
-            numeros[1] = 9;
-            numeros[2] = 15;
-            numeros[3] = 3;
-
-            procesaDatos(numeros);
-
-            foreach (int i in numeros)
+            int[] arrayElementos = LeerDatos();
+            Console.WriteLine("Desde el Main");
+            foreach (int i in arrayElementos)
             {
                 Console.WriteLine(i);
             }
         }
 
-        static void procesaDatos (int [] datos)
+        static int [] LeerDatos()
         {
-            for ( int i = 0; i < datos.Length; i++)
+            Console.WriteLine("Numero de elementos deseados en la arrays");
+            string respuesta = Console.ReadLine();
+            int numElemtos = int.Parse(respuesta);
+            int [] datos = new int[numElemtos];
+
+            for (int i = 0; i < numElemtos; i++)
             {
-                datos[i] += 10;
+                Console.WriteLine("Introduce el dato para posicion : " + i);
+                respuesta = Console.ReadLine();
+                int datosElemento = int.Parse(respuesta);
+                datos[i] = datosElemento;
             }
+
+            return datos;
         }
     }
 }
