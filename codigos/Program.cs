@@ -17,15 +17,15 @@ namespace codigos
         static int [] LeerDatos()
         {
             Console.WriteLine("Numero de elementos deseados en la arrays");
-            string respuesta = Console.ReadLine();
-            int numElemtos = int.Parse(respuesta);
+            string tamañoArray = Console.ReadLine();
+            int numElemtos = int.Parse(tamañoArray);
             int [] datos = new int[numElemtos];
 
             for (int i = 0; i < numElemtos; i++)
             {
                 Console.WriteLine("Introduce el dato para posicion : " + i);
-                respuesta = Console.ReadLine();
-                int datosElemento = int.Parse(respuesta);
+                string valorCampo = Console.ReadLine();
+                int datosElemento = int.Parse(valorCampo);
                 datos[i] = datosElemento;
             }
 
