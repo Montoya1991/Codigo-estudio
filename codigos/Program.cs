@@ -11,6 +11,16 @@ namespace codigos
             Gorila kong = new Gorila();
 
             pony.galopar();
+            pony.respirar();
+            pony.cuidarCrias();
+
+            David.respirar();
+            David.cuidarCrias();
+            David.pensar();
+
+            kong.respirar();
+            kong.cuidarCrias();
+            kong.trepar();
             
         }
 
