@@ -3,33 +3,53 @@
 namespace codigos
 {
     internal class Program
-    {
+    { //Proyecto herencia 
         static void Main(string[] args)
         {
-            int[] arrayElementos = LeerDatos();
-            Console.WriteLine("Desde el Main");
-            foreach (int i in arrayElementos)
-            {
-                Console.WriteLine(i);
-            }
+            Caballo pony = new Caballo();
+            humano David = new humano();
+            Gorila kong = new Gorila();
+
+            pony.galopar();
+            
         }
 
-        static int [] LeerDatos()
+    }
+    class Mamiferos
+    {
+        public void respirar()
         {
-            Console.WriteLine("Numero de elementos deseados en la arrays");
-            string tamañoArray = Console.ReadLine();
-            int numElemtos = int.Parse(tamañoArray);
-            int [] datos = new int[numElemtos];
+            Console.WriteLine("respirar");
+        }
 
-            for (int i = 0; i < numElemtos; i++)
-            {
-                Console.WriteLine("Introduce el dato para posicion : " + i);
-                string valorCampo = Console.ReadLine();
-                int datosElemento = int.Parse(valorCampo);
-                datos[i] = datosElemento;
-            }
-
-            return datos;
+        public void cuidarCrias()
+        {
+            Console.WriteLine("cuidar crias");
         }
     }
+
+    class Caballo : Mamiferos
+    {
+        public void galopar()
+        {
+            Console.WriteLine("Soy capaz de galopar");
+        }
+    }
+
+    class humano : Mamiferos
+    {
+        public void pensar()
+        {
+            Console.WriteLine("pienso");
+        }
+    }
+    
+    class Gorila : Mamiferos
+    {
+        public void trepar()
+        {
+            Console.WriteLine("trepar");
+        }
+    }
+
 }
